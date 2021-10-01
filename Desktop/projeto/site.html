@@ -1,0 +1,61 @@
+<!DOCTYPE html5>
+
+<html>
+        <!-- aquele "link rel.." é pra colocar a logo na barra de endereço do navegador-->    
+       
+ <head>
+      <title> Java Script, Html e Css </title>
+      <meta charset="utf-8"></meta>
+      <link rel="sortcut icon" href="javascript.png" type="image/png"> 
+      <style>
+          body {
+              background-color: rgb(250, 208, 156);
+              color: rgb(68, 67, 67);
+              font: normal 30 pt arial;
+            }
+          h2 {
+             color:teal
+          }
+      </style>
+ </head>
+       
+
+  <body>
+            
+     <h1> Aprendendo a programar </h1> 
+          
+     <p>Aqui anotarei as observações para a linguagem <em>javascript</em> e algumas dicas sobre <em>html e css</em>. </p>
+
+     <p><h2>As vantagens de estudar e revisar por aqui são: </h2></p>
+           
+                
+     <li> <small>Acompanhamento pessoal do progresso do <b>aprendendizado</b>.</li></small></li>
+     <li> <em>Privacidade.</em></li>
+     <li> <small>Automatização do processo de <strong>revisão</strong></small>.</small> </li> 
+     </ul>
+
+    <!-- tag para adicionar coisas relacionadas a imagem -->
+    <figure>
+                
+    <img src="hero.png" alt= "Foto de códigos de programação" width="940px" height="645px">
+    <figcaption> <p>jaja tu ta assim todo bugado estudando esses bagulho esquisito de nerdola</p> </figcaption>
+
+    <script> 
+        /*var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} + ${n2} resulta em: ` + String(s))*/
+        var nome = window.prompt('Qual é o seu nome?')
+        var salario = window.prompt('Digite seu salário')
+        //salario.toFixed(3).replace('.',',')
+        salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`Olá ${nome},seu nome tem ${nome.length} letras. <br/>`)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}. <br/>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}. <br/>`)
+        document.write(`Seu salário é de ${salario}.`)
+        
+    </script>
+        
+  </body>    
+       
+</html>
