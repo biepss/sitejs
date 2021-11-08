@@ -1,10 +1,10 @@
 <!DOCTYPE html5>
 
-<html>
+<html lang="pt-br">
         <!-- aquele "link rel.." é pra colocar a logo na barra de endereço do navegador-->    
        
  <head>
-      <title> Java Script, Html e Css </title>
+      <title>JavaScript, HTML e CSS</title>
       <meta charset="utf-8"></meta>
       <link rel="sortcut icon" href="javascript.png" type="image/png"> 
       <style>
@@ -22,16 +22,16 @@
 
   <body>
             
-     <h1> Aprendendo a programar </h1> 
+     <h1>Aprendendo a programar</h1> 
           
      <p>Aqui anotarei as observações para a linguagem <em>javascript</em> e algumas dicas sobre <em>html e css</em>. </p>
 
      <p><h2>As vantagens de estudar e revisar por aqui são: </h2></p>
            
                 
-     <li> <small>Acompanhamento pessoal do progresso do <b>aprendendizado</b>.</li></small></li>
-     <li> <em>Privacidade.</em></li>
-     <li> <small>Automatização do processo de <strong>revisão</strong></small>.</small> </li> 
+     <li><small>Acompanhamento pessoal do progresso do <b>aprendendizado</b>.</li></small></li>
+     <li><em>Privacidade.</em></li>
+     <li><small>Automatização do processo de <strong>revisão</strong></small>.</small> </li> 
      </ul>
 
     <!-- tag para adicionar coisas relacionadas a imagem -->
@@ -45,8 +45,8 @@
         var n2 = Number(window.prompt('Digite outro número:'))
         var s = n1 + n2
         window.alert(`A soma entre ${n1} + ${n2} resulta em: ` + String(s))*/
-        var nome = window.prompt('Qual é o seu nome?')
-        var salario = window.prompt('Digite seu salário')
+        const nome = window.prompt('Qual é o seu nome?')
+        let salario = window.prompt('Digite seu salário')
         //salario.toFixed(3).replace('.',',')
         salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
         document.write(`Olá ${nome},seu nome tem ${nome.length} letras. <br/>`)
